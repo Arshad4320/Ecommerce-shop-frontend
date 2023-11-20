@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        secondary: "#3C2CED",
-        warning: "#EBB943",
+        secondary: "#14274E",
+        warning: "#E8F9FD",
         primary: "#080246",
       },
       backgroundColor: {
         primary: "#080246",
-        warning: "#EBB943",
-        secondary: "#3C2CED",
+        warning: "#E8F9FD",
+        secondary: "#14274E",
       },
     },
   },

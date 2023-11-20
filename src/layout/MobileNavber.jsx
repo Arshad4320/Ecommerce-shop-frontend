@@ -49,7 +49,7 @@ const MobileNavber = () => {
           {isMenuOpen ? (
             <HiMiniXMark className=" h-6 w-6   ml-4   " />
           ) : (
-            <div className="">
+            <div className="text-secondary">
               <FaOutdent className=" h-6 w-6   ml-4" />
             </div>
           )}
