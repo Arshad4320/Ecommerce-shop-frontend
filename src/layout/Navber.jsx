@@ -36,7 +36,7 @@ const Navber = () => {
   );
 
   return (
-    <div className="">
+    <div className="relative z-50 ">
       {/* single nav */}
       <div className="  shadow-sm  xl:hidden lg:hidden md:block sm:block top-0  fixed  left-0 right-0  ">
         <MobileNavber />

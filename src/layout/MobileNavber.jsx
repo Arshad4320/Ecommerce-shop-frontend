@@ -40,7 +40,7 @@ const MobileNavber = () => {
   );
 
   return (
-    <div className=" bg-white  sticky   p-4 xl:mb-0 lg:mb-0  shadow-md z-10 lg:p-5 xl:p-5 ">
+    <div className=" bg-white    p-4 xl:mb-0 lg:mb-0  shadow-md :p-5 xl:p-5 ">
       <div className="flex justify-between    ">
         <button
           onClick={toggleMenu}
@@ -65,8 +65,6 @@ const MobileNavber = () => {
         <div className=" scroll-m-3 ">
           <ul className="space-y-2 ">
             <li className="">{routing}</li>
-
-            {/* Add more menu items here */}
           </ul>
         </div>
       </div>
