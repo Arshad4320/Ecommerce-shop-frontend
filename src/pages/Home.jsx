@@ -1,6 +1,6 @@
+import HomeBanner from "../components/HomeBanner";
 import HomeSearch from "../components/HomeSearch";
 import BestSellProducts from "../components/bestSellProducts/BestSellProducts";
-import HomeBanner from "../components/homeBanner";
 
 const Home = () => {
   return (

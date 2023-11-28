@@ -9,9 +9,9 @@ const HomeSearch = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <div className="mx-10 mb-2  hidden md:block lg:block xl:block">
+    <div className=" mb-2  hidden md:block lg:block xl:block">
       <div className="flex justify-between flex-wrap ">
-        <div className=" border-2 bg-primary text-white w-[33%] flex item-center ml-1 items-center relative  rounded-md">
+        <div className=" border-2 bg-primary text-white w-[33%] flex item-center  items-center relative  rounded-md">
           <div className="mr-10">
             <button
               onClick={toggleMenu}

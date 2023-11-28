@@ -3,7 +3,7 @@ import banner from "../assets/banner.jpg";
 
 const HomeBanner = () => {
   return (
-    <div className="mx-10">
+    <div className="">
       <div
         className="relative flex justify-center items-center text-white text-center  "
         style={{

@@ -7,28 +7,28 @@ const Navber = () => {
     <>
       <Link
         to="/"
-        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
+        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
       >
         Home
       </Link>
 
       <Link
         to="/about"
-        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
+        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
       >
         About Us
       </Link>
 
       <Link
         to="/destination"
-        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
+        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
       >
         Destination
       </Link>
 
       <Link
         to="/login"
-        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
+        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
       >
         Login
       </Link>
@@ -43,7 +43,7 @@ const Navber = () => {
       </div>
       {/* main navbar */}
       <div className="hidden sm:hidden md:hidden lg:block xl:block ">
-        <div className="bg-secondary  py-2">
+        <div className="bg-primary  py-2">
           <div className="  flex justify-center  space-x-3 ">
             <FaFacebook className="text-xl text-white  rounded-full w-5 h-5" />
             <FaLinkedin className="text-xl text-white  rounded-full w-5 h-5" />

@@ -11,7 +11,7 @@ const BestSellProdut = ({ data }) => {
         </div>
 
         <div className="p-5">
-          <div className="flex justify-between text-2xl text-secondary font-semibold ">
+          <div className="flex justify-between text-2xl text-primary font-semibold ">
             <p>{title}</p>
             <p>{price}</p>
           </div>
