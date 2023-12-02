@@ -7,30 +7,36 @@ const Navber = () => {
     <>
       <Link
         to="/"
-        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
+        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
       >
         Home
       </Link>
 
       <Link
         to="/about"
-        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
+        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
       >
         About Us
       </Link>
 
       <Link
-        to="/destination"
-        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
+        to="/products"
+        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
       >
-        Destination
+        Products
       </Link>
 
       <Link
         to="/login"
-        className="text-primary text-xl font-semibold hover:text-teal-600 py-3"
+        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
       >
         Login
+      </Link>
+      <Link
+        to="/register"
+        className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
+      >
+        Register
       </Link>
     </>
   );

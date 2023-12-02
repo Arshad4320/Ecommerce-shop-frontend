@@ -1,14 +1,15 @@
-// import { configureStore } from "@reduxjs/toolkit";
-// const store = configureStore({
-//   reducer: {
+import { configureStore } from "@reduxjs/toolkit";
+import { apiSlice } from "./api/apiSlice";
+import userSlice from "./features/user/userSlice";
+import productSlice from "./features/product/productSlice";
 
-//     [api.reducerPath]: api.reducer,
-//   },
-//   middleware: (getDefaultMiddleware) =>
-//     getDefaultMiddleware().concat(api.middleware),
-// });
+export const store = configureStore({
+  reducer: {
+    user: userSlice,
+    product: productSlice,
+    [apiSlice.reducerPath]: apiSlice.reducer,
+  },
 
-// export  RootState = ReturnType< store.getState>;
-// export  AppDispatch =  store.dispatch;
-
-// export default store;
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(apiSlice.middleware),
+});

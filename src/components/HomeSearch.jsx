@@ -56,7 +56,7 @@ const HomeSearch = () => {
             Search
           </button>
         </div>
-        <div className=" border-2 text-primary border-primary rounded-md w-[33%] flex justify-center items-center">
+        <div className=" border-2 text-secondary border-primary rounded-md w-[33%] flex justify-center items-center">
           <p className="text-xl font-semibold">Friday Offer 10%</p>
         </div>
       </div>

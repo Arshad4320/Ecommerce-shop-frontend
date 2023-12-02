@@ -15,7 +15,7 @@ const HomeBanner = () => {
         }}
       >
         {/* Background overlay */}
-        <div className="absolute inset-0 bg-primary opacity-70 py-30"></div>
+        <div className="absolute inset-0 bg-[#04022B] opacity-70 py-30"></div>
         <div className="relative  ">
           <h1 className="text-5xl font-bold mb-4">Book Shop</h1>
           <p className="text-lg">Search your Favorite book</p>

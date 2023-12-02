@@ -14,25 +14,25 @@ const MobileNavber = () => {
     <>
       <Link
         to="/"
-        className="block  px-4 py-2 font-semibold text-primary hover:text-teal-500 rounded "
+        className="block  px-4 py-2 font-semibold text-secondary hover:text-teal-500 rounded "
       >
         Home
       </Link>
       <Link
         to="/about"
-        className="block  px-4 py-2 font-semibold text-primary hover:text-teal-500 rounded "
+        className="block  px-4 py-2 font-semibold text-secondary hover:text-teal-500 rounded "
       >
         About
       </Link>
       <Link
-        to="/destination"
-        className="block  px-4 py-2 font-semibold text-primary hover:text-teal-500 rounded "
+        to="/products"
+        className="block  px-4 py-2 font-semibold text-secondary hover:text-teal-500 rounded "
       >
-        Destination
+        Products
       </Link>
       <Link
         to="/login"
-        className="block  px-4 py-2 font-semibold text-primary hover:text-teal-500 rounded "
+        className="block  px-4 py-2 font-semibold text-secondary hover:text-teal-500 rounded "
       >
         Login
       </Link>
@@ -49,7 +49,7 @@ const MobileNavber = () => {
           {isMenuOpen ? (
             <HiMiniXMark className=" h-6 w-6   ml-4   " />
           ) : (
-            <div className="text-primary">
+            <div className="text-secondary">
               <FaOutdent className=" h-6 w-6   ml-4" />
             </div>
           )}

@@ -13,7 +13,7 @@ const BestSellProducts = () => {
 
   return (
     <div>
-      <p className="text-5xl text-center text-primary py-14 font-semibold">
+      <p className="text-5xl text-center text-secondary py-14 font-semibold">
         Our Best Sell Products
       </p>
       <div className="grid grid-col sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-10 gap-5 ">

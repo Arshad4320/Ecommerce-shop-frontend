@@ -5,6 +5,7 @@ import App from "../App";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
+import Products from "../pages/Products";
 
 export const routes = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const routes = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/products",
+        element: <Products />,
       },
       {
         path: "*",
