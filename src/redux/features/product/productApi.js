@@ -14,9 +14,10 @@ const productApi = apiSlice.injectEndpoints({
         url: "/product/get-products",
       }),
     }),
+
     getSingleProduct: builder.query({
       query: (id) => ({
-        url: `/product/get-product/${id}`,
+        url: `product/get-product/${id}`,
       }),
     }),
   }),

@@ -12,6 +12,7 @@ const Login = () => {
       const result = await loginUser(data).unwrap();
       if (result.data) {
         console.log(result.data);
+        localStorage.setItem("token", result.accessToken);
         dispatch(userAdded(result.data));
       }
       console.log(result);

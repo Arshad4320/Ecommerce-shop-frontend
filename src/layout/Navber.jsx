@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import MobileNavber from "./MobileNavber";
-import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+  FaCartArrowDown,
+} from "react-icons/fa";
 import logo from "../assets/logo.png";
 const Navber = () => {
   const routing = (
@@ -37,6 +44,12 @@ const Navber = () => {
         className="text-secondary text-xl font-semibold hover:text-teal-600 py-3"
       >
         Register
+      </Link>
+      <Link
+        to="/cart/get-cart"
+        className="text-secondary text-xl mt-1 font-semibold hover:text-teal-600 py-3"
+      >
+        <FaCartArrowDown />
       </Link>
     </>
   );

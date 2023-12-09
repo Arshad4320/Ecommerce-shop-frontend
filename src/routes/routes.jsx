@@ -6,6 +6,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
 import Products from "../pages/Products";
+import Carts from "../pages/Carts";
+import ProductView from "../pages/ProductView";
 
 export const routes = createBrowserRouter([
   {
@@ -32,6 +34,18 @@ export const routes = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+      },
+      {
+        path: "/product/get-product-category/:id",
+        element: <Products />,
+      },
+      {
+        path: "/product/get-product",
+        element: <ProductView />,
+      },
+      {
+        path: "/cart/get-cart",
+        element: <Carts />,
       },
       {
         path: "*",

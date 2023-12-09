@@ -2,17 +2,33 @@ import { useState } from "react";
 import { FaOutdent } from "react-icons/fa";
 import { HiMiniXMark } from "react-icons/hi2";
 
+import { Link } from "react-router-dom";
+import { useGetAllProductQuery } from "../redux/features/product/productApi";
+
 const HomeSearch = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const { data, error, isLoading } = useGetAllProductQuery();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  // Now you can use the `data` variable.
+  console.log(data.data);
+
   return (
     <div className=" mb-2  hidden md:block lg:block xl:block">
       <div className="flex justify-between flex-wrap ">
         <div className=" border-2 bg-primary text-white w-[33%] flex item-center  items-center relative  rounded-md">
-          <div className="mr-10">
+          <div className="mr-3">
             <button
               onClick={toggleMenu}
               className=" 0 text-white focus:outline-none md:block  flex"
@@ -27,16 +43,20 @@ const HomeSearch = () => {
             </button>
             <div
               className={`${
-                isMenuOpen ? "block absolute z-10 w-full " : "hidden"
+                isMenuOpen ? "block absolute z-10 w-full mt-1" : "hidden"
               } bg-primary  `}
             >
               {/* Menu Content */}
               <div className=" scroll-m-3  ">
-                <ul className="space-y-2 text-white p-5 text-lg font-semibold">
-                  <li className="">Electronics Collection</li>
-                  <li className="">Janes Collection</li>
-                  <li className="">Ladies Collection</li>
-                  <li className="">Furniture Collection</li>
+                <ul className="space-y-2 text-white py-4 ml-12 text-lg font-semibold">
+                  {data.data.map((item) => (
+                    <Link
+                      to={`/product/get-product-category/${item._id}`}
+                      key={item._id}
+                    >
+                      <li className="">{item?.cetagory?.name}</li>
+                    </Link>
+                  ))}
 
                   {/* Add more menu items here */}
                 </ul>

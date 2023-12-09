@@ -6,6 +6,7 @@ const initialState = {
   description: null,
   category: null,
   size: null,
+  image: null,
 };
 
 const productSlice = createSlice({
@@ -18,6 +19,7 @@ const productSlice = createSlice({
       state.description = action.payload.description;
       state.category = action.payload.category;
       state.size = action.payload.size;
+      state.image = action.payload.image;
     },
   },
 });
